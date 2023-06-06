@@ -7,6 +7,6 @@ output "route_table_ids" {
     value = aws_route_table.main.*.id
 }
 
-output "subnets" {
-    value = "aws_subnet.main"
+output "subnet_cidrs" {
+    value = aws_subnet.main.*.cidr_block
 }
