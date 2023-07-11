@@ -57,9 +57,9 @@ resource "aws_route" "ngw" {
 }
 
 
-output "ngw" {
-    value = aws_nat_gateway.ngw
-}
+#output "ngw" {
+ #   value = aws_nat_gateway.ngw
+#}
 
 resource "aws_vpc_peering_connection" "peer" {
   
